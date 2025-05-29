@@ -1,25 +1,15 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import connectDB from "./config.js"; // ✅ Import database connection
-import authRoutes from "../routes/authroutes.js"; // ✅ Ensure correct filename case
-import itemRoutes from "../routes/itemRoutes.js";
-import app from "./server.js"; // ✅ Import pre-configured Express app
+import connectDB from "./config.js";
+import app from "./server.js"; // Keep this
 
-dotenv.config();  // Load environment variables
-
-// Connect to Database
+dotenv.config();
 connectDB();
 
-// Routes
-app.use("/api/auth", authRoutes);
-app.use("/api/items", itemRoutes);
-
-// Default route
 app.get("/", (req, res) => {
   res.send("Lost & Found API is running...");
 });
 
-// Start the Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
