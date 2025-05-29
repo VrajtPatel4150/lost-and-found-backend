@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "https://lost-and-found-frontend-1aqsmdb9q-vraj-patels-projects-48ab6a52.vercel.app",
+      "https://lost-and-found-frontend-orpin.vercel.app/",
     ],
     credentials: true,
   })
