@@ -7,7 +7,7 @@ import userRoutes from "../routes/userRoutes.js";
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'https://lost-and-found-deployed-frontend-pr64629et.vercel.app/', 
+  origin: 'https://lost-and-found-frontend-orpin.vercel.app/', 
 
 }));
 
