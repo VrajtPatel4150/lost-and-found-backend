@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   origin: 'https://lost-and-found-deployed-frontend-pr64629et.vercel.app/', 
-  credentials: true
+
 }));
 
 // Mount all grouped routes

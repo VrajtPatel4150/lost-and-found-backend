@@ -4,6 +4,10 @@ import Item from "../models/Item.js";
 
 const router = express.Router();
 
+router.get("/", async (req, res) => {
+  res.json({ message: "Items route works!" });
+});
+
 // GET all items
 router.get("/", async (req, res) => {
   try {
