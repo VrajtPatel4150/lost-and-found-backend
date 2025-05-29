@@ -5,8 +5,7 @@ import connectDB from "./config.js"; // ✅ Import database connection
 import authRoutes from "../routes/authroutes.js"; // ✅ Ensure correct filename case
 import itemRoutes from "../routes/itemRoutes.js";
 import app from "./server.js"; // ✅ Import pre-configured Express app
-import authRoutes from "../routes/authroutes.js";  // ✅ FIXED
-import itemRoutes from "../routes/itemRoutes.js";
+
 
 
 dotenv.config();  // Load environment variables
